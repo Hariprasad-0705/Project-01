@@ -1,0 +1,339 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Processor</title>
+    <link rel="icon" type="image/jpg" href="../images/apple-logo-5.png" />
+
+    <style>
+      * {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background-color: black;
+      }
+
+      .pro1 img {
+        height: 480px;
+        width: 1000px;
+        margin-top: 20px;
+        margin-left: 200px;
+        margin-bottom: 25px;
+      }
+      /*
+        h1{
+            
+            color: red;
+            font-size: 80px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+        }
+
+        h2{
+            font-size: 50px;
+
+        }
+        h3{
+            
+            font-size: 30px;
+
+        }
+        h4{
+
+            font-size: 20px;
+
+        }
+        b{
+            color: rgb(33, 111, 247);
+        }
+        */
+
+      h1 {
+        margin-top: 15px;
+        margin-left: 50px;
+        margin-bottom: 35px;
+        color: red;
+        font-size: 80px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+
+      h2 {
+        margin-left: 20px;
+        font-size: 50px;
+      }
+      h3 {
+        margin-top: 30px;
+        margin-left: 70px;
+        font-size: 30px;
+      }
+      h4 {
+        margin-top: 30px;
+        margin-left: 300px;
+        margin-bottom: 30px;
+
+        font-size: 20px;
+      }
+      b {
+        color: rgb(33, 111, 247);
+      }
+
+      .chip img {
+        border: solid 2px;
+        border-radius: 1px;
+        height: 300px;
+        width: 300px;
+        margin-top: 35px;
+        margin-left: 500px;
+      }
+      .chipdata {
+        display: flex;
+        justify-self: center;
+        align-items: center;
+        padding: 50px;
+        margin-left: 25px;
+      }
+      .chipdata div {
+        padding: 50px;
+        color: red;
+      }
+
+      .chip img {
+        transition: 1s;
+        cursor: pointer;
+      }
+      .chip img:hover {
+        transform: scale(1.2);
+        border-color: red;
+        outline: 0;
+        -webkit-box-shadow: inset 5px rgba(252, 250, 250, 0.075),
+          0 0 8px rgba(67, 37, 236, 0.6);
+        box-shadow: inset 5px rgba(248, 245, 245, 0.075),
+          0 0 8px rgba(254, 69, 7, 0.6);
+      }
+
+      .pro1 img {
+        transition: 1s;
+        cursor: pointer;
+      }
+      .pro1 img:hover {
+        transform: scale(1.1);
+      }
+
+      .chipicon {
+        content: url(../images/iphone/A17\ pro\ icon.png);
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+      }
+      .battery {
+        display: block;
+      }
+
+      .batteryimg {
+        display: flex;
+      }
+
+      .battery img {
+        border: solid red;
+        border-radius: 25px;
+        width: 550px;
+        height: 500px;
+        margin: 50px;
+      }
+      .batterydata {
+        margin: 50px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 50px;
+      }
+      .batterydata b {
+        color: rgb(33, 111, 247);
+        padding: 20px;
+        margin-top: 250px;
+      }
+      .batterydata h5 {
+        font-size: 25px;
+        margin-left: -35px;
+        font-size: 35px;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      .batterydata ul li {
+        font-size: 30px;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+      .battery2 {
+        font-size: 25px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+
+      .batterydata2 {
+        display: flex;
+        margin-left: 250px;
+        margin-right: 200px;
+        padding: 80px;
+      }
+
+      .Battery1 img {
+        margin-left: 80px;
+        margin-bottom: 0;
+        height: 280px;
+        border: none;
+        border-radius: 10px;
+      }
+      .batterydata2 img {
+        height: 30px;
+        width: 80px;
+        border: solid 1px white;
+        margin: px;
+        margin-bottom: 2px;
+        padding: 0;
+        margin-top: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="processor">
+      <div class="pro1">
+        <h1>processor</h1>
+        <h2><b>A17 Pro chip.</b></h2>
+        <h2>A monster win for gaming.</h2>
+        <h3>
+          A new, Pro‑class <b>GPU</b> <br />
+          enables games not seen<br />
+          before on any smartphone.
+        </h3>
+        <img src="../images/iphone/gaming 011.jpg" alt="" />
+
+        <h4>
+          <b>iPhone 15 Pro</b> uses hardware-accelerated ray tracing for the
+          first time <br />
+          that’s up to four times faster than software‑based ray tracing, <br />
+          delivering more fluid graphics and true‑to‑life lighting. <br />
+          It’s the fastest ray‑tracing performance in a smartphone.
+          <br />
+          <br />
+          <b>MetalFX</b> Upscaling combines the performance of the GPU and the
+          Neural Engine <br />
+          to produce high‑resolution graphics while using much less power.
+          <br />
+          So you can game on and on.
+          <br />
+        </h4>
+      </div>
+
+      <div class="chip">
+        <img src="../images/iphone/chip 2.jpg" alt="" />
+
+        <div class="chipdata">
+          <div>
+            Up to
+            <h2>
+              <b
+                >20% faster <br />
+                GPU</b
+              >
+            </h2>
+            than A16 Bionic
+            <br />
+            <i class="chipicon"></i>
+          </div>
+          <div>
+            Up to
+            <h2>
+              <b
+                >4x faster <br />ray tracing <br />
+                than A16 Bionic</b
+              >
+            </h2>
+            now with 6 cores
+          </div>
+          <div>
+            Up to
+            <h2>
+              <b> 2x faster <br />Neural Engine <br /> </b>
+            </h2>
+            performs nearly <br />
+            35 trillion operations <br />
+            per second <br />
+            with 16 cores
+          </div>
+        </div>
+        ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      </div>
+    </div>
+
+    <!-- Staring battery Details-->
+
+    <div class="Battery">
+      <h1>Battery</h1>
+      <!---
+            <i class="Battery-icon">battery</i>
+            -->
+
+      <h2><b>Battery </b> life that's positively <b> Pro.</b></h2>
+      <h3>
+        Even with so many advanced new features, <br />
+        <b>iPhone 15 Pro</b> <br />
+        still gives you amazing all‑day battery life.
+      </h3>
+      <br />
+
+      <div class="batteryimg">
+        <img src="../images/iphone/battery.png" alt="" />
+        <br />
+        <div class="batterydata">
+          <h5>
+            Battery life on <br />
+            Apple iPhone 15 Pro Max
+          </h5>
+          <br />
+          <br /><br />
+          <br />
+          <ul>
+            <li>Gaming <b>9/10</b></li>
+            <br />
+            <li>Photograpy <b>9.5/10</b></li>
+            <br />
+            <li>Multitasking <b>9/10</b></li>
+            <br />
+            <li>Productivity <b>10</b></li>
+            <br />
+            <li>Performance <b>9/10</b></li>
+            <br />
+          </ul>
+        </div>
+      </div>
+
+      <div class="Battery1">
+        <h3>
+          Even with so many advanced new features, <br />
+          <b>iPhone 15 pro</b> <br />
+          still gives you amazing all‑day battery life.
+        </h3>
+
+        <div class="batteryimg2">
+          <img src="../images/iphone/port c usb.jpg" alt="" />
+
+          <img
+            src="../images/iphone/230913-apple-iphone-15-usb-c-1.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="batterydata2">
+        <h2>
+          Charge and connect with the <br />
+          <b> USB-C </b> <img src="../images/iphone/type C port.png" alt="" />
+          <br />
+          connector on your <b>iPhone 15</b>
+        </h2>
+      </div>
+    </div>
+  </body>
+</html>

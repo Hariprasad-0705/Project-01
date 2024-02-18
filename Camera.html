@@ -1,0 +1,358 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/jpg" href="../images/apple-logo-5.png" />
+
+    <title>Camera</title>
+
+    <style>
+      * {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background-color: rgb(0, 0, 0);
+        box-sizing: border-box;
+      }
+      .main {
+        height: 70rem;
+        width: auto;
+      }
+      h1 {
+        margin-top: 25px;
+        margin-left: 50px;
+        margin-bottom: 75px;
+        color: red;
+        font-size: 80px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+
+      h2 {
+        margin-left: 20px;
+        font-size: 50px;
+      }
+      h3 {
+        margin-top: 30px;
+        margin-left: 70px;
+        font-size: 30px;
+      }
+      h4 {
+        margin-top: 30px;
+        margin-left: 300px;
+        margin-bottom: 30px;
+
+        font-size: 20px;
+      }
+      b {
+        color: rgb(33, 111, 247);
+      }
+
+      img {
+        padding-left: px;
+        margin-top: 25px;
+        margin-bottom: 20px;
+        margin-left: 100px;
+        border: solid 1px red;
+        border-radius: 150px;
+        height: 700px;
+        width: 1200px;
+      }
+
+      /* end top thon*/
+
+      .container img {
+        height: 350px;
+        width: 550px;
+        margin-top: 20px;
+        border: solid rgba(33, 116, 250, 0.285);
+        box-shadow: 0px 0px 0px 0px;
+        border-radius: 35px;
+      }
+
+      .gallary {
+        margin: 25px;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 5px;
+      }
+      .gallary img {
+        margin-right: 70px;
+        width: 500px;
+        height: 300px;
+        transition: 1s;
+        cursor: pointer;
+      }
+      .gallary img:hover {
+        transform: scale(1.5);
+      }
+
+      .popup {
+        background-color: rgba(113, 4, 4, 0.511);
+        position: absolute;
+        margin: 0px;
+      }
+
+      /* cont1 */
+
+      .container1 img {
+        margin-top: 0px;
+        display: flex;
+        padding: 0px;
+        margin-bottom: 80px;
+        margin-left: 200px;
+        height: 650px;
+        width: 900px;
+        border-radius: none;
+        border: none;
+        transition: 1s;
+        cursor: pointer;
+      }
+
+      video {
+        margin-left: 100px;
+        padding: 0px;
+        height: 460px;
+        width: 1200px;
+        border-radius: 150px;
+
+        /* border: solid 1px  rgb(33, 111, 247); */
+      }
+      .container2 {
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        padding: 50px 0px 50px 0px;
+        display: flex;
+        border: 0;
+        font-size: 35px;
+        margin-right: 0px;
+      }
+      .container2 img {
+        padding: 0px 0px 0px 0px;
+        height: 420px;
+        width: 310px;
+        border-radius: 0px;
+        border: none;
+        transform: scale(1s);
+        cursor: pointer;
+      }
+      .container3 img {
+        height: 630px;
+        width: 310px;
+        border: 0px;
+        border-radius: 1px;
+      }
+      .vispro img {
+        margin-left: 520px;
+        margin-bottom: 20px;
+        height: 500px;
+        width: 380px;
+      }
+
+      /*..............navbar try...........
+
+
+        nav{
+            margin-top: 15px;
+            margin-left: 100px;
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            padding:20px,10px,10%,10%;
+            scroll-behavior: smooth;
+
+        }
+
+        .logoname{
+        font-size: 20px;
+         color: white;system-ui, -apple-system, BlinkMacSystemFont
+         font-size:50px;
+         padding:15px;
+         
+        }
+
+        .logoname img{
+
+            width: 40px;
+            height: 30px;
+            border: none;
+
+        }
+
+
+        nav ul li {
+
+         font-size: 30px;
+         margin-left: 50px;
+
+         list-style-type:none;
+         display: inline-block;
+         padding: 10px 10px;
+        }
+
+       nav ul li a {
+         color: hsl(0, 98%, 50%);
+         text-decoration: none;
+         font-weight: bold;
+       }
+       nav ul li :hover{   
+  
+         color: hsl(0, 6%, 94%);
+         transition: 0.3s;
+     
+      }
+      */
+
+      .main img {
+        transition: 1s;
+        cursor: pointer;
+      }
+      .main img:hover {
+        transform: scale(0.9);
+      }
+      .gallary img {
+        transition: 1s;
+        cursor: pointer;
+      }
+      .gallary img:hover {
+        transform: scale(1.1);
+      }
+      .container3 img {
+        transition: 1s;
+        cursor: pointer;
+      }
+      .container3 img:hover {
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+
+  <body>
+
+
+    <div class="main">
+      <h1>Camera</h1>
+      <h2><b>A</b> camera that captures your <b>Wildest Imagination</b>.</h2>
+      <br />
+      <br />
+      <h3>
+        From dramatic framing flexibility to next-generation portraits,<br />
+        see what you can do with our most powerful <br />
+        <b>iphone</b> camera system.
+      </h3>
+
+      <img src="../images/iphone/camera__thonda.jpg" alt="" />
+    </div>
+
+    <div class="container">
+      <h3>
+        With <b>iPhone 15 Pro</b>,<br />
+        you have multiple focal lengths to work with. <br />
+        It’s like having <b>seven pro lenses in your pocket</b>, everywhere you
+        go.
+
+        <img src="../images/iphone/camera 0011.jpg" alt="" />
+        <img src="../images/iphone/camera 0033.jpg" alt="" />
+      </h3>
+
+      <div class="gallary">
+        <h3>
+          The <b>48MP Main Camera </b> is more advanced than ever,
+          <br />capturing <b>super‑high‑resolution</b> photos with a new level
+          of detail and colour.
+        </h3>
+        <h4>
+          You’ll see the improvements in your portraits. <br />And now you no
+          longer have to switch to Portrait mode. <br />
+          If your subject is a person, dog or cat, <br />iPhone automatically
+          captures depth information. <br />
+          So you can choose to instantly see your photo as a portrait, with an
+          artful blur effect. <br />
+          Or later in the Photos app.
+        </h4>
+        <img src="../images/iphone/gall 02.jpg" alt="" />
+        <img src="../images/iphone/gall 03.jpg" alt="" />
+        <img src="../images/iphone/gall 05.jpg" alt="" />
+        <img src="../images/iphone/gall 04.jpg" alt="" />
+      </div>
+    </div>
+
+    <div class="container1">
+      <h2><b>Magic</b> is made behind the camera too.</h2>
+      <img src="../images/iphone/dd_control__byfirct471ea_large.jpg" alt="" />
+
+      <h3>
+        The <b>TrueDepth</b> camera also uses the latest Smart <b>HDR</b>,
+        <br />
+        Night mode and portrait. <br />
+        So you’ll get your best selfies yet.
+      </h3>
+      <br />
+
+      <h2>
+        <b>Pro video. </b><br />
+        Now with more Pro.
+      </h2>
+      <video autoplay muted loop>
+        <source src="../images/iphone/large_2x.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <br />
+    <h2>What’s your Main <b>mm</b>?</h2>
+    <h3>
+      Now you can choose your <br />
+      <b> Default Main camera lens </b> <br />
+      -- <b>24 mm, 28 mm or 35 mm </b>--<br />
+      All without having to carry around extra. <br />
+      That’s the power of computational photography.
+    </h3>
+
+    <div class="container2">
+      <img src="../images/iphone/dd_24mm__f08wbhnvh62y_large.jpg" alt="hi" />
+      <img src="../images/iphone/dd_28mm__flocyshtyvqu_large.jpg" alt="" />
+      <img src="../images/iphone/dd_35mm__pb96m1hzq7m2_large.jpg" alt="" />
+    </div>
+
+    <div class="container3">
+      <h2>Next <b>-</b> generation portraits.</h2>
+      <h4>
+        <pre>
+     The <b>Photonic Engine supercharges your portraits</b>,
+     giving you beautiful detail, true-to-life colour,
+     zero shutter lag and up to two times better low-light performance.
+     <b>Now portraits can be Live Photos too.</b> <br>
+     <b>In Portrait mode</b>, you can use continuous zoom to move in nice and close.
+     And you can even shift the focus between subjects after you take a shot.
+     </pre>
+      </h4>
+      <img
+        src="../images/iPhone 15 Pro and iPhone 15 Pro Max  chip_files/dd_portrait__bmbfdxrp5cya_large.jpg"
+        alt=""
+      />
+      <img
+        src="../images/iPhone 15 Pro and iPhone 15 Pro Max  chip_files/dd_overlay_zoom__c5pf5j9na52e_large.jpg"
+        alt=""
+      />
+      <img
+        src="../images/iPhone 15 Pro and iPhone 15 Pro Max  chip_files/48mp_camera__cxq25ak34nau_large.jpg"
+        alt=""
+      />
+
+      <pre><h4>
+             <b>Make memories come alive with spatial videos.</b>
+    iPhone 15 Pro can shoot 3D videos using the advanced Ultra Wide and Main cameras,
+           so you can relive your favourite moments on Apple Vision Pro.
+     </h4></pre>
+      <div class="vispro">
+        <img
+          src="../images/iphone/dd_vision_pro__e3uakz6uhimq_large.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+  </body>
+</html>
